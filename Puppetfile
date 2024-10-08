@@ -18,6 +18,6 @@ forge 'https://forge.puppet.com'
 
 # mod 'windows_firewall'
 #git: 'https://github.com/voxpupuli/puppet-windows_firewall'
-#branch: 'deveopment'
+#branch: 'development'
 mod 'puppet-windows_firewall', '5.0.0'
 
