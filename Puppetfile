@@ -16,6 +16,8 @@ forge 'https://forge.puppet.com'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 
-# Manages the Windows Firewall
-'puppet-windows_firewall', '5.0.0'
+# mod 'windows_firewall'
+#git: 'https://github.com/voxpupuli/puppet-windows_firewall'
+#branch: 'deveopment'
+mod 'puppet-windows_firewall', '5.0.0'
 
