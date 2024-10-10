@@ -19,6 +19,5 @@ mod 'puppetlabs-stdlib',  '5.0.1'
 
 # mod 'windows_firewall'
 #git: 'https://github.com/voxpupuli/puppet-windows_firewall'
-#branch: 'development'
+# branch: 'development'
 mod 'puppet-windows_firewall', '5.0.0'
-
