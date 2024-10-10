@@ -28,7 +28,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-class { 'pe_repo::platform::amazon_2023_x86_64': }
+  # class { 'pe_repo::platform::amazon_2023_x86_64': }
 
 }
 
