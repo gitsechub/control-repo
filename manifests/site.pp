@@ -31,3 +31,8 @@ node default {
 
 
 }
+
+node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
+  include windows_firewall
+
+}
