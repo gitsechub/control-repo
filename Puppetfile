@@ -3,8 +3,8 @@ forge 'https://forge.puppet.com'
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 #mod 'puppetlabs/inifile', '5.0.1'
-mod 'puppetlabs/registry', '9.6.0'
-mod 'puppetlabs/stdlib',  '5.0.1'
+mod 'puppetlabs-registry', '9.6.0'
+mod 'puppetlabs-stdlib',  '5.0.1'
 #mod 'puppetlabs/concat',  '7.0.1'
 
 # Modules from Git
@@ -18,6 +18,6 @@ mod 'puppetlabs/stdlib',  '5.0.1'
 #  branch: 'docs_experiment'
 
 # mod 'windows_firewall'
-#git: 'https://github.com/voxpupuli/puppet-windows_firewall'
-# branch: 'development'
+git: 'https://github.com/voxpupuli/puppet-windows_firewall'
+branch: 'development'
 mod 'puppet-windows_firewall', '5.0.0'
