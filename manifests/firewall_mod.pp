@@ -1,5 +1,5 @@
 class windows_firewall {
-  windows_firewall_rule { 'Block RDP-In traffic':
+  windowsfirewall { 'Block RDP-In traffic':
     ensure       => 'present',
     direction    => 'in',
     action       => 'deny',
