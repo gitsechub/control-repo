@@ -1,5 +1,5 @@
 class windows_firewall {
-  windowsfirewall { 'Block RDP-In traffic':
+  windows_firewall::exception { 'Block RDP-In traffic':
     ensure       => 'present',
     direction    => 'in',
     action       => 'deny',
