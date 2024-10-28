@@ -28,11 +28,19 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+<<<<<<< HEAD
   #class { 'pe_repo::platform::windows_x86_64': }
+=======
+
+>>>>>>> development
 
 }
 
 node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
   include windows_firewall
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> development
