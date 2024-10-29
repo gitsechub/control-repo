@@ -38,7 +38,7 @@ node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
 
 }
 
-windows_firewall::exception { 'Allow inbound traffic on port 8080':
+windows_firewall::exception { 'Block inbound RDP access':
   ensure       => 'present',
   direction    => 'in',
   action       => 'block',
