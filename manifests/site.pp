@@ -37,14 +37,3 @@ node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
   include windows_firewall
 
 }
-
-windows_firewall::exception { 'Block inbound RDP access':
-  ensure       => 'present',
-  direction    => 'in',
-  action       => 'block',
-  protocol     => 'TCP',
-  local_port   => 3389,
-  remote_port  => 'any',
-  display_name => 'Block RDP inbound traffic on port 3389',
-  description  => 'Blocks Remote Desktop Access',
-  }
