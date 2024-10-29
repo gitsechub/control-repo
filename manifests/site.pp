@@ -36,14 +36,15 @@ node default {
 node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
   include windows_firewall
 
-  windows_firewall::exception { 'Allow inbound traffic on port 8080':
-    ensure       => 'present',
-    direction    => 'in',
-    action       => 'block',
-    protocol     => 'TCP',
-    local_port   => 3389,
-    remote_port  => 'any',
-    display_name => 'Block RDP inbound traffic on port 3389',
-    description  => 'Blocks Remote Desktop Access',
-  }
 }
+
+windows_firewall::exception { 'Allow inbound traffic on port 8080':
+  ensure       => 'present',
+  direction    => 'in',
+  action       => 'block',
+  protocol     => 'TCP',
+  local_port   => 3389,
+  remote_port  => 'any',
+  display_name => 'Block RDP inbound traffic on port 3389',
+  description  => 'Blocks Remote Desktop Access',
+  }
