@@ -1,5 +1,5 @@
 class windows_firewall {
-  windows_firewall::exception { 'Allow inbound  on port 8080':
+  windows_firewall_rule { 'Allow RDP access on port 3389':
     ensure       => 'present',
     direction    => 'in',
     action       => 'allow',
