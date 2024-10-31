@@ -1,11 +1,11 @@
 class windows_firewall {
-  windows_firewall_rule { 'Allow inbound traffic on port 8080':
+  windows_firewall::exception { 'Allow inbound  on port 8080':
     ensure       => 'present',
     direction    => 'in',
-    action       => 'block',
+    action       => 'allow',
     enabled      => 'true',
-    local_port   => '8080',
+    local_port   => '3389',
     protocol     => 'TCP',
-    description  => 'Allows inbound traffic on port 8080',
+    description  => 'Allows inbound traffic on port 3389',
   }
 }
