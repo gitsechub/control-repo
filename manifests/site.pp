@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   class { 'pe_repo::platform::windows_x86_64': }
-
+  
 }
 
 node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
