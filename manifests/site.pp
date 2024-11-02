@@ -36,5 +36,16 @@ node default {
 node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
   include windows_firewall
 
+   windows_firewall::exception { 'Allow inbound traffic on port 3389':
+    ensure       => 'present',
+    direction    => 'in',
+    action       => 'allow',
+    protocol     => 'TCP',
+    local_port   => 3389,
+    remote_port  => 'any',
+    display_name => 'Allow inbound Remote Desktop traffic on port 3389',
+    description  => 'Allows inbound Remote Desktop traffic on port 3389',
+  }
 }
+
 
