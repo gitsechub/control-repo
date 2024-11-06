@@ -46,15 +46,11 @@ node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
     description  => 'Allows inbound Remote Desktop traffic on port 3389',
   }
 }
-class  { 'java':
-  package => 'pe-java17', 
-  ensure => 'present',
-  }
-
-
 node 'ip-172-31-15-101.us-east-2.compute.internal' {
-  include java
-
+  package { 'pe-java17': 
+    ensure => 'present',
+    source => '',
+    provider => 'rpm',
+  }
 }
-
 
