@@ -21,3 +21,6 @@ mod 'puppet-windows_firewall', '5.0.0'
 # git: 'https://github.com/voxpupuli/puppet-windows_firewall',
 # branch: 'development',
 
+mod 'puppetlabs/puppetlabs-java'
+#  git:    'https://github.com/puppetlabs/puppetlabs-java',
+#  branch: 'main'
