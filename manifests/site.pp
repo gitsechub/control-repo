@@ -49,8 +49,7 @@ node 'ec2amaz-bqigu4j.us-east-2.compute.internal' {
 }
 node 'ip-172-31-15-101.us-east-2.compute.internal' {
   package { 'pe-java17': ensure => 'present',
-  source => 'https://yum.puppet.com/puppet8/amazon/2023/x86_64/puppet-agent-8.8.1-1.amazon2023.x86_64.rpm', # or the appropriate path/URL provider => 'rpm', # or the appropriate provider, e.g., 'dpkg' for Debian packages 
-  provider => 'rpm'
+  source => 'https://yum.puppet.com/puppet8/amazon/2023/x86_64/puppet-agent-8.8.1-1.amazon2023.x86_64.rpm',
   }
 }
 
