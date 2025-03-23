@@ -1,6 +1,6 @@
 
 # ...
-name: build
+name: Trivy Scan of Github repo
 on: 
   push:
     branches:
