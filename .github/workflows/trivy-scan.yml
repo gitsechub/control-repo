@@ -1,12 +1,24 @@
+
 # ...
-on:
+name: build
+on: 
   push:
-  branches:
-    - main
-steps:
-  - name: Install Trivy
-    uses: aquasecurity/trivy-action@0.28.0
-    with:
-      scan-type: 'fs'
-      scan-ref: '.'
-      cache: true
+    branches:
+      - Production
+  pull_request:
+    branches:
+      - Production
+jobs:
+  test:
+    runs-on: Ubuntu-24.04
+    steps:
+      - name: Install Trivy
+        uses: aquasecurity/setup-trivy@0.28.0
+        with:
+          version: v0.28.0
+          cache: true
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+          
+    
+ 
