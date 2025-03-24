@@ -17,9 +17,8 @@ jobs:
         run: mkdir -p "GitHub Actions/Trivy_Automation"
 
       - name: Install Aqua Security Trivy install
-        uses: aquasecurity/setup-trivy@v0.60.0
+        uses: aquasecurity/setup-trivy@v0.2.2
         with:
-          version: v0.60.0
           cache: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
