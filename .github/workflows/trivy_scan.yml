@@ -23,7 +23,7 @@ jobs:
           cache: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout GitHub repo
+      - name: Check out GitHub repo
         uses: actions/checkout@v4
 
       - name: Run Trivy vuln scanner in Github repo
