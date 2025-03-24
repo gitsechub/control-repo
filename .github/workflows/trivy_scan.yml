@@ -19,7 +19,7 @@ jobs:
       - name: Install Aqua Security Trivy install
         uses: aquasecurity/setup-trivy@v0.2.2
         with:
-          version: v0.28.0
+          version: v0.2.0
           cache: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
