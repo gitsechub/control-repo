@@ -16,8 +16,11 @@ jobs:
         run: mkdir -P "GitHub Actions/Trivy_Automation"
 
       - name: Install Trivy
-        run: curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.60.0
-        
+        run: 
+          sudo apt-get update
+          sudo apt-get install -y curl
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.60.0
+
       - name: Setup Trivy
         uses: aquasecurity/setup-trivy@0.28.0
         with:
