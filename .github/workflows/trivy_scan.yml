@@ -9,7 +9,7 @@ on:
     branches:
       - main
 jobs:
-  builds:
+  build:
     name: Build
     runs-on: Ubuntu-24.04
     steps:
