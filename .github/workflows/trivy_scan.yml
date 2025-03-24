@@ -9,12 +9,12 @@ on:
     branches:
       - main
 jobs:
-  build:
+  builds:
     name: Build
     runs-on: Ubuntu-24.04
     steps:
       - name: Create Output Directory
-        run: mkdir -P "GitHub Actions/Trivy_Automation"
+        run: mkdir -p "GitHub Actions/Trivy_Automation"
 
       - name: Install Aqua Security Trivy install
         uses: aquasecurity/setup-trivy@v0.2.2
