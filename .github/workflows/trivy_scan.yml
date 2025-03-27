@@ -37,8 +37,11 @@ jobs:
 
       - name: Upload Trivy scan results to GitHub
         uses: github/codeql-action/upload-sarif@v3
-        with: 
-            sarif_file: 'trivy_scan_results.sarif'
+        with:
+          sarif_file: 'trivy_scan_results.sarif'
+          token: ${{secrets.GITHUB_TOKEN}}
+
+        
 
 
     
